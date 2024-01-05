@@ -34,7 +34,7 @@ namespace Sales_Management
                 mail.Body = "PFA Daily Balance details for " + source + " Dated " + DateTime.Now.ToString();
 
                 System.Net.Mail.Attachment attachment;
-                attachment = new System.Net.Mail.Attachment(Home.directory + "\\" + source + DateTime.Now.ToString("ddMMyy") + ".xls");
+                attachment = new System.Net.Mail.Attachment(Home.directory + "\\XLSX\\" + source + DateTime.Now.ToString("ddMMyy") + ".xls");
                 mail.Attachments.Add(attachment);
 
                 SmtpServer.Port = 587;
@@ -235,6 +235,7 @@ namespace Sales_Management
 
             worksheet.PageSetup.Orientation = XlPageOrientation.xlLandscape;
             worksheet.PageSetup.PrintGridlines = true;
+            worksheet.PageSetup.PaperSize = XlPaperSize.xlPaperA4;
             
             //Print the excel sheet
             worksheet.PrintOutEx();
@@ -243,8 +244,8 @@ namespace Sales_Management
             //app.Visible = true;
             //app.ActiveWindow.PrintPreview();
             // save the application  
-            workbook.SaveAs(Home.directory + "\\" + source + DateTime.Now.ToString("ddMMyy") + ".xls", Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Microsoft.Office.Interop.Excel.XlSaveAsAccessMode.xlExclusive, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
-            // Exit from the application  
+            workbook.SaveAs(Home.directory + "\\XLSX\\" + source + DateTime.Now.ToString("ddMMyy") + ".xls", Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Microsoft.Office.Interop.Excel.XlSaveAsAccessMode.xlExclusive, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
+            workbook.SaveAs(source + DateTime.Now.ToString("ddMMyy") + ".xls", Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Microsoft.Office.Interop.Excel.XlSaveAsAccessMode.xlExclusive, Type.Missing, Type.Missing, Type.Missing, Type.Missing);       // Exit from the application  
             workbook.Close();
             app.Quit();
 

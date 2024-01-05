@@ -16,5 +16,13 @@ namespace Sales_Management
         {
             InitializeComponent();
         }
+
+        private void verifiedImage_DoubleClick(object sender, EventArgs e)
+        {
+            string date = dateLabel.Text;
+
+            VerificationForm verificationForm = new VerificationForm(date);
+            verificationForm.ShowDialog();
+        }
     }
 }

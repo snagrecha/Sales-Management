@@ -35,7 +35,7 @@ namespace Sales_Management
 
         public static string directory = System.IO.Path.GetDirectoryName(System.Windows.Forms.Application.ExecutablePath);
 
-         
+
         public static DailyCash cashDetails = new DailyCash();
         public static SaleParameters saleParameters;
 
@@ -55,7 +55,7 @@ namespace Sales_Management
             bajajId = ConfigurationManager.AppSettings["BajajId"];
 
             directory = System.IO.Path.GetDirectoryName(System.Windows.Forms.Application.ExecutablePath);
-    }
+        }
 
         public Home()
         {
@@ -573,7 +573,7 @@ namespace Sales_Management
 
                 success = 0;
 
-                //success = ExcelWriter.sendEmail("sneh.nagrecha@gmail.com", "YM");
+                success = ExcelWriter.sendEmail("sneh.nagrecha@gmail.com", "YM");
                 if (success == 1)
                 {
                     cashDetails.Emailed = DateTime.Now;
@@ -585,12 +585,12 @@ namespace Sales_Management
         private void GetSalesOverview()
         {
             List<DailyCash> dailyCashList = DBHandler.GetAllDailyCashRecords();
-            
+
             foreach (DailyCash daySale in dailyCashList)
             {
                 //SaleParameters saleParameters = DBHandler.GetDailySales(posServerName, posDBName, daySale.Date.ToString("yyyy/MM/dd"));
                 SingleDayOverview overview = new SingleDayOverview();
-            
+
                 overview.dateLabel.Text = daySale.Date.ToString("dd/MM/yyyy");
                 overview.startBillLabel.Text = daySale?.startBill;
                 overview.endBillLabel.Text = daySale?.endBill;
@@ -610,7 +610,7 @@ namespace Sales_Management
                 else overview.verifiedImage.Image = Resources.Green_Check;
 
 
-                flp.Controls.Add( overview );
+                flp.Controls.Add(overview);
             }
         }
         private void dailyOverviewTab_Click(object sender, EventArgs e)

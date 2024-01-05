@@ -143,6 +143,7 @@
             verifiedImage.SizeMode = PictureBoxSizeMode.StretchImage;
             verifiedImage.TabIndex = 11;
             verifiedImage.TabStop = false;
+            verifiedImage.DoubleClick += verifiedImage_DoubleClick;
             // 
             // bajajLabel
             // 

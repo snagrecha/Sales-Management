@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             tabControl = new TabControl();
             homeTab = new TabPage();
             pictureBox4 = new PictureBox();
@@ -84,21 +85,21 @@
             cashSaleTextBox = new TextBox();
             totalSaleTextBox = new TextBox();
             dailyOverviewTab = new TabPage();
+            label32 = new Label();
+            label31 = new Label();
+            label30 = new Label();
+            label29 = new Label();
+            label28 = new Label();
+            label27 = new Label();
+            label26 = new Label();
+            label25 = new Label();
+            label24 = new Label();
             label23 = new Label();
             label22 = new Label();
             label21 = new Label();
             flp = new FlowLayoutPanel();
             statusStrip1 = new StatusStrip();
             dateLabel = new ToolStripStatusLabel();
-            label24 = new Label();
-            label25 = new Label();
-            label26 = new Label();
-            label27 = new Label();
-            label28 = new Label();
-            label29 = new Label();
-            label30 = new Label();
-            label31 = new Label();
-            label32 = new Label();
             tabControl.SuspendLayout();
             homeTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -229,7 +230,7 @@
             // endBillTextBox
             // 
             endBillTextBox.Enabled = false;
-            endBillTextBox.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            endBillTextBox.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             endBillTextBox.Location = new Point(1061, 154);
             endBillTextBox.Name = "endBillTextBox";
             endBillTextBox.ReadOnly = true;
@@ -240,7 +241,7 @@
             // label20
             // 
             label20.AutoSize = true;
-            label20.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label20.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label20.Location = new Point(1074, 130);
             label20.Name = "label20";
             label20.Size = new Size(95, 21);
@@ -250,7 +251,7 @@
             // startBillTextBox
             // 
             startBillTextBox.Enabled = false;
-            startBillTextBox.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            startBillTextBox.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             startBillTextBox.Location = new Point(1061, 51);
             startBillTextBox.Name = "startBillTextBox";
             startBillTextBox.ReadOnly = true;
@@ -261,7 +262,7 @@
             // label19
             // 
             label19.AutoSize = true;
-            label19.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label19.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label19.Location = new Point(1067, 27);
             label19.Name = "label19";
             label19.Size = new Size(102, 21);
@@ -274,7 +275,7 @@
             differenceLabel.BackColor = Color.Transparent;
             differenceLabel.CausesValidation = false;
             differenceLabel.FlatStyle = FlatStyle.Flat;
-            differenceLabel.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            differenceLabel.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             differenceLabel.Location = new Point(734, 616);
             differenceLabel.Name = "differenceLabel";
             differenceLabel.Size = new Size(19, 21);
@@ -288,7 +289,7 @@
             calculatedCashLabel.BackColor = Color.Transparent;
             calculatedCashLabel.CausesValidation = false;
             calculatedCashLabel.FlatStyle = FlatStyle.Flat;
-            calculatedCashLabel.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            calculatedCashLabel.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             calculatedCashLabel.Location = new Point(734, 588);
             calculatedCashLabel.Name = "calculatedCashLabel";
             calculatedCashLabel.Size = new Size(19, 21);
@@ -302,7 +303,7 @@
             availableCashLabel.BackColor = Color.Transparent;
             availableCashLabel.CausesValidation = false;
             availableCashLabel.FlatStyle = FlatStyle.Flat;
-            availableCashLabel.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            availableCashLabel.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             availableCashLabel.Location = new Point(734, 560);
             availableCashLabel.Name = "availableCashLabel";
             availableCashLabel.Size = new Size(19, 21);
@@ -315,7 +316,7 @@
             label18.AutoSize = true;
             label18.BackColor = Color.Transparent;
             label18.CausesValidation = false;
-            label18.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label18.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label18.Location = new Point(582, 616);
             label18.Name = "label18";
             label18.Size = new Size(94, 21);
@@ -328,7 +329,7 @@
             label17.AutoSize = true;
             label17.BackColor = Color.Transparent;
             label17.CausesValidation = false;
-            label17.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label17.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label17.Location = new Point(542, 588);
             label17.Name = "label17";
             label17.Size = new Size(135, 21);
@@ -341,7 +342,7 @@
             label15.AutoSize = true;
             label15.BackColor = Color.Transparent;
             label15.CausesValidation = false;
-            label15.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label15.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label15.Location = new Point(551, 560);
             label15.Name = "label15";
             label15.Size = new Size(126, 21);
@@ -354,7 +355,7 @@
             totalDebits.AutoSize = true;
             totalDebits.BackColor = Color.Transparent;
             totalDebits.CausesValidation = false;
-            totalDebits.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            totalDebits.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             totalDebits.Location = new Point(1003, 637);
             totalDebits.Name = "totalDebits";
             totalDebits.Size = new Size(19, 21);
@@ -367,7 +368,7 @@
             label16.AutoSize = true;
             label16.BackColor = Color.Transparent;
             label16.CausesValidation = false;
-            label16.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label16.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label16.Location = new Point(940, 637);
             label16.Name = "label16";
             label16.Size = new Size(52, 21);
@@ -380,7 +381,7 @@
             totalCredits.AutoSize = true;
             totalCredits.BackColor = Color.Transparent;
             totalCredits.CausesValidation = false;
-            totalCredits.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            totalCredits.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             totalCredits.Location = new Point(339, 637);
             totalCredits.Name = "totalCredits";
             totalCredits.Size = new Size(19, 21);
@@ -393,7 +394,7 @@
             label14.AutoSize = true;
             label14.BackColor = Color.Transparent;
             label14.CausesValidation = false;
-            label14.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label14.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label14.Location = new Point(276, 637);
             label14.Name = "label14";
             label14.Size = new Size(52, 21);
@@ -482,7 +483,7 @@
             // label13
             // 
             label13.AutoSize = true;
-            label13.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label13.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label13.Location = new Point(972, 228);
             label13.Name = "label13";
             label13.Size = new Size(59, 21);
@@ -492,7 +493,7 @@
             // label12
             // 
             label12.AutoSize = true;
-            label12.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label12.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label12.Location = new Point(304, 228);
             label12.Name = "label12";
             label12.Size = new Size(63, 21);
@@ -531,7 +532,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label7.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label7.Location = new Point(621, 228);
             label7.Name = "label7";
             label7.Size = new Size(103, 21);
@@ -555,7 +556,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label8.Location = new Point(863, 130);
             label8.Name = "label8";
             label8.Size = new Size(141, 21);
@@ -565,7 +566,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label9.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label9.Location = new Point(707, 130);
             label9.Name = "label9";
             label9.Size = new Size(120, 21);
@@ -575,7 +576,7 @@
             // label10
             // 
             label10.AutoSize = true;
-            label10.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label10.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label10.Location = new Point(515, 130);
             label10.Name = "label10";
             label10.Size = new Size(125, 21);
@@ -585,7 +586,7 @@
             // label11
             // 
             label11.AutoSize = true;
-            label11.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label11.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label11.Location = new Point(316, 130);
             label11.Name = "label11";
             label11.Size = new Size(126, 21);
@@ -595,7 +596,7 @@
             // crntReceivedTextBox
             // 
             crntReceivedTextBox.Enabled = false;
-            crntReceivedTextBox.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            crntReceivedTextBox.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             crntReceivedTextBox.Location = new Point(877, 154);
             crntReceivedTextBox.Name = "crntReceivedTextBox";
             crntReceivedTextBox.ReadOnly = true;
@@ -606,7 +607,7 @@
             // crntIssuedTextBox
             // 
             crntIssuedTextBox.Enabled = false;
-            crntIssuedTextBox.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            crntIssuedTextBox.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             crntIssuedTextBox.Location = new Point(710, 154);
             crntIssuedTextBox.Name = "crntIssuedTextBox";
             crntIssuedTextBox.ReadOnly = true;
@@ -617,7 +618,7 @@
             // balanceCardTextBox
             // 
             balanceCardTextBox.Enabled = false;
-            balanceCardTextBox.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            balanceCardTextBox.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             balanceCardTextBox.Location = new Point(522, 154);
             balanceCardTextBox.Name = "balanceCardTextBox";
             balanceCardTextBox.ReadOnly = true;
@@ -628,7 +629,7 @@
             // balanceCashTextBox
             // 
             balanceCashTextBox.Enabled = false;
-            balanceCashTextBox.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            balanceCashTextBox.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             balanceCashTextBox.Location = new Point(321, 154);
             balanceCashTextBox.Name = "balanceCashTextBox";
             balanceCashTextBox.ReadOnly = true;
@@ -639,7 +640,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label6.Location = new Point(149, 130);
             label6.Name = "label6";
             label6.Size = new Size(88, 21);
@@ -649,7 +650,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label5.Location = new Point(893, 79);
             label5.Name = "label5";
             label5.Size = new Size(84, 21);
@@ -660,7 +661,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label4.Location = new Point(725, 79);
             label4.Name = "label4";
             label4.Size = new Size(73, 21);
@@ -671,7 +672,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label3.Location = new Point(542, 79);
             label3.Name = "label3";
             label3.Size = new Size(81, 21);
@@ -682,7 +683,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label2.Location = new Point(339, 79);
             label2.Name = "label2";
             label2.Size = new Size(82, 21);
@@ -693,7 +694,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label1.Location = new Point(149, 27);
             label1.Name = "label1";
             label1.Size = new Size(84, 21);
@@ -703,7 +704,7 @@
             // debitSaleTextBox
             // 
             debitSaleTextBox.Enabled = false;
-            debitSaleTextBox.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            debitSaleTextBox.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             debitSaleTextBox.Location = new Point(134, 154);
             debitSaleTextBox.Name = "debitSaleTextBox";
             debitSaleTextBox.ReadOnly = true;
@@ -714,7 +715,7 @@
             // bajajSaleTextBox
             // 
             bajajSaleTextBox.Enabled = false;
-            bajajSaleTextBox.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            bajajSaleTextBox.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             bajajSaleTextBox.Location = new Point(877, 51);
             bajajSaleTextBox.Name = "bajajSaleTextBox";
             bajajSaleTextBox.ReadOnly = true;
@@ -725,7 +726,7 @@
             // upiSaleTextBox
             // 
             upiSaleTextBox.Enabled = false;
-            upiSaleTextBox.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            upiSaleTextBox.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             upiSaleTextBox.Location = new Point(710, 51);
             upiSaleTextBox.Name = "upiSaleTextBox";
             upiSaleTextBox.ReadOnly = true;
@@ -736,7 +737,7 @@
             // cardSaleTextBox
             // 
             cardSaleTextBox.Enabled = false;
-            cardSaleTextBox.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cardSaleTextBox.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             cardSaleTextBox.Location = new Point(522, 51);
             cardSaleTextBox.Name = "cardSaleTextBox";
             cardSaleTextBox.ReadOnly = true;
@@ -747,7 +748,7 @@
             // cashSaleTextBox
             // 
             cashSaleTextBox.Enabled = false;
-            cashSaleTextBox.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cashSaleTextBox.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             cashSaleTextBox.Location = new Point(321, 51);
             cashSaleTextBox.Name = "cashSaleTextBox";
             cashSaleTextBox.ReadOnly = true;
@@ -758,7 +759,7 @@
             // totalSaleTextBox
             // 
             totalSaleTextBox.Enabled = false;
-            totalSaleTextBox.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            totalSaleTextBox.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             totalSaleTextBox.Location = new Point(134, 51);
             totalSaleTextBox.Name = "totalSaleTextBox";
             totalSaleTextBox.ReadOnly = true;
@@ -790,10 +791,100 @@
             dailyOverviewTab.UseVisualStyleBackColor = true;
             dailyOverviewTab.Click += dailyOverviewTab_Click;
             // 
+            // label32
+            // 
+            label32.AutoSize = true;
+            label32.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label32.Location = new Point(1160, 25);
+            label32.Name = "label32";
+            label32.Size = new Size(78, 19);
+            label32.TabIndex = 12;
+            label32.Text = "Deposited";
+            // 
+            // label31
+            // 
+            label31.AutoSize = true;
+            label31.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label31.Location = new Point(1063, 25);
+            label31.Name = "label31";
+            label31.Size = new Size(61, 19);
+            label31.TabIndex = 11;
+            label31.Text = "Verified";
+            // 
+            // label30
+            // 
+            label30.AutoSize = true;
+            label30.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label30.Location = new Point(962, 24);
+            label30.Name = "label30";
+            label30.Size = new Size(63, 19);
+            label30.TabIndex = 10;
+            label30.Text = "Emailed";
+            // 
+            // label29
+            // 
+            label29.AutoSize = true;
+            label29.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label29.Location = new Point(845, 25);
+            label29.Name = "label29";
+            label29.Size = new Size(80, 19);
+            label29.TabIndex = 9;
+            label29.Text = "Submitted";
+            // 
+            // label28
+            // 
+            label28.AutoSize = true;
+            label28.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label28.Location = new Point(658, 25);
+            label28.Name = "label28";
+            label28.Size = new Size(42, 19);
+            label28.TabIndex = 8;
+            label28.Text = "Bajaj";
+            // 
+            // label27
+            // 
+            label27.AutoSize = true;
+            label27.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label27.Location = new Point(576, 25);
+            label27.Name = "label27";
+            label27.Size = new Size(32, 19);
+            label27.TabIndex = 7;
+            label27.Text = "UPI";
+            // 
+            // label26
+            // 
+            label26.AutoSize = true;
+            label26.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label26.Location = new Point(490, 24);
+            label26.Name = "label26";
+            label26.Size = new Size(40, 19);
+            label26.TabIndex = 6;
+            label26.Text = "Card";
+            // 
+            // label25
+            // 
+            label25.AutoSize = true;
+            label25.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label25.Location = new Point(400, 24);
+            label25.Name = "label25";
+            label25.Size = new Size(40, 19);
+            label25.TabIndex = 5;
+            label25.Text = "Cash";
+            // 
+            // label24
+            // 
+            label24.AutoSize = true;
+            label24.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label24.Location = new Point(311, 25);
+            label24.Name = "label24";
+            label24.Size = new Size(43, 19);
+            label24.TabIndex = 4;
+            label24.Text = "Total";
+            // 
             // label23
             // 
             label23.AutoSize = true;
-            label23.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label23.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label23.Location = new Point(486, 5);
             label23.Name = "label23";
             label23.Size = new Size(50, 19);
@@ -803,7 +894,7 @@
             // label22
             // 
             label22.AutoSize = true;
-            label22.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label22.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label22.Location = new Point(180, 25);
             label22.Name = "label22";
             label22.Size = new Size(60, 19);
@@ -813,7 +904,7 @@
             // label21
             // 
             label21.AutoSize = true;
-            label21.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label21.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label21.Location = new Point(57, 25);
             label21.Name = "label21";
             label21.Size = new Size(41, 19);
@@ -846,96 +937,6 @@
             dateLabel.Size = new Size(58, 17);
             dateLabel.Text = "dateLabel";
             // 
-            // label24
-            // 
-            label24.AutoSize = true;
-            label24.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label24.Location = new Point(311, 25);
-            label24.Name = "label24";
-            label24.Size = new Size(43, 19);
-            label24.TabIndex = 4;
-            label24.Text = "Total";
-            // 
-            // label25
-            // 
-            label25.AutoSize = true;
-            label25.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label25.Location = new Point(400, 24);
-            label25.Name = "label25";
-            label25.Size = new Size(40, 19);
-            label25.TabIndex = 5;
-            label25.Text = "Cash";
-            // 
-            // label26
-            // 
-            label26.AutoSize = true;
-            label26.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label26.Location = new Point(490, 24);
-            label26.Name = "label26";
-            label26.Size = new Size(40, 19);
-            label26.TabIndex = 6;
-            label26.Text = "Card";
-            // 
-            // label27
-            // 
-            label27.AutoSize = true;
-            label27.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label27.Location = new Point(576, 25);
-            label27.Name = "label27";
-            label27.Size = new Size(32, 19);
-            label27.TabIndex = 7;
-            label27.Text = "UPI";
-            // 
-            // label28
-            // 
-            label28.AutoSize = true;
-            label28.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label28.Location = new Point(658, 25);
-            label28.Name = "label28";
-            label28.Size = new Size(42, 19);
-            label28.TabIndex = 8;
-            label28.Text = "Bajaj";
-            // 
-            // label29
-            // 
-            label29.AutoSize = true;
-            label29.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label29.Location = new Point(845, 25);
-            label29.Name = "label29";
-            label29.Size = new Size(80, 19);
-            label29.TabIndex = 9;
-            label29.Text = "Submitted";
-            // 
-            // label30
-            // 
-            label30.AutoSize = true;
-            label30.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label30.Location = new Point(962, 24);
-            label30.Name = "label30";
-            label30.Size = new Size(63, 19);
-            label30.TabIndex = 10;
-            label30.Text = "Emailed";
-            // 
-            // label31
-            // 
-            label31.AutoSize = true;
-            label31.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label31.Location = new Point(1063, 25);
-            label31.Name = "label31";
-            label31.Size = new Size(61, 19);
-            label31.TabIndex = 11;
-            label31.Text = "Verified";
-            // 
-            // label32
-            // 
-            label32.AutoSize = true;
-            label32.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label32.Location = new Point(1160, 25);
-            label32.Name = "label32";
-            label32.Size = new Size(78, 19);
-            label32.TabIndex = 12;
-            label32.Text = "Deposited";
-            // 
             // Home
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -943,6 +944,7 @@
             ClientSize = new Size(1345, 769);
             Controls.Add(tabControl);
             Controls.Add(statusStrip1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Home";
             Text = "Home";
             FormClosed += Home_FormClosed;
